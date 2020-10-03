@@ -5,7 +5,7 @@ Show case of Elastic Search Cloud Hosting in a flutter app
 ## Videos
 
 - [Local setup video explanation: PART A](https://youtu.be/DVfj_z17O2s)
-- [Cloud Setup: Part B](https://youtu.be/DVfj_z17O2s)
+- [Cloud Setup: Part B](https://youtu.be/fC_8aMtyBBw)
 
 ## Kibana Data
 - The Kibana data is in in the `kibanadata.txt` file.
@@ -25,4 +25,4 @@ elasticsearch.url="your elastic search endpoint"`
 
 # GitHub Repository
 - [Local setup video explanation: PART A](https://github.com/Kickbykick/ElasticSearchLocalHosting)
-- [Cloud Setup: Part B] (https://github.com/Kickbykick/Elastic-Cloud)
+- [Cloud Setup: Part B](https://github.com/Kickbykick/Elastic-Cloud)
