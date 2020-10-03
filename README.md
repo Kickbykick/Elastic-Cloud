@@ -5,7 +5,7 @@ Show case of Elastic Search Cloud Hosting in a flutter app
 ## Videos
 
 - [Local setup video explanation: PART A](https://youtu.be/DVfj_z17O2s)
-- [Cloud Setup: Part B] ()
+- [Cloud Setup: Part B](https://youtu.be/DVfj_z17O2s)
 
 ## Kibana Data
 - The Kibana data is in in the `kibanadata.txt` file.
