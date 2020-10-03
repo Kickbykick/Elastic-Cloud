@@ -1,0 +1,76 @@
+PUT /locations
+{
+  "settings": {
+    "analysis": {
+      "filter": {
+        "autocomplete_filter": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20
+        }
+      },
+      "analyzer": {
+        "autocomplete": { 
+          "type": "custom",
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase",
+            "autocomplete_filter"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "city": {
+        "type": "text",
+        "analyzer": "autocomplete", 
+        "search_analyzer": "standard" 
+      }
+    }
+  }
+}
+
+POST /locations/_doc
+{
+  "city" : "Amsterdam"
+}
+
+POST /locations/_doc
+{
+  "city" : "Rotterdam"
+}
+
+POST /locations/_doc
+{
+  "city" : "Castelré"
+}
+
+POST /locations/_doc
+{
+  "city" : "Babyloniënbroek"
+}
+
+POST /locations/_doc
+{
+  "city" : "Amstelveen"
+}
+
+POST /locations/_doc
+{
+  "city" : "Lee Blvd"
+}
+
+
+
+GET locations/_search
+{
+    "query": {
+        "term" : { "city" : "b" }
+    }
+}
+
+HEAD /locations
+
+DELETE /locations
